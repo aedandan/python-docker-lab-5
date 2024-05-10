@@ -9,7 +9,7 @@
 # https://github.com/docker/awesome-compose
 services:
   server:
-    platform: linux/arm64/v8
+    platform: linux/x86_64
     build:
       context: .
     ports:
@@ -27,7 +27,7 @@ services:
           path: .
   db:
     image: postgres
-    platform: linux/arm64/v8
+    platform: linux/x86_64
     restart: always
     user: postgres
     secrets:
