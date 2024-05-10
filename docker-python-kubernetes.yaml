@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
        - name: flask-service
-         image: aedandan/python-docker-lab-5
+         image: aedandan/python-docker-lab-5:latest
          imagePullPolicy: Always
          env:
           - name: POSTGRES_PASSWORD
